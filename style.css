@@ -1,68 +1,86 @@
-.about {
-    cursor: pointer;
-    background-color:#124076;
-    color: #FFFFFF;
-    padding-top: 20px;
-    padding-bottom: 30px;
+body{
+    background: #ffff;
+    padding: 3.5%;
+    text-align: center;
 }
 
-.row {
-    display: flex;
-    justify-content: space-around;
+h2{
+    text-decoration: underline;
+}
+
+h3{
+    text-decoration: solid;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    justify-content: center;
     align-items: center;
 }
-.about h1 {
-    padding: 10px 0;
-    margin-bottom: 20px;
+
+img:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+    box-shadow: 0 32px 75px rgba(0, 0, 0, 0.1);
 }
 
-
-.about img {
-    display: block;
-    width: 100px;
-    height: 100px;
-    line-height: 100px;
-    margin: auto;
-    border-radius: 50%;
-    font-size: 40px;
-    color: #FFFFFF;
-    background-color: #927b84;
-    border: 2px solid #4C0822;
-
-    webkit-transition: all .5s ease;
-    moz-transition: all .5s ease;
-    os-transition: all .5s ease;
-    transition: all .5s ease;
-
+.co-convener .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.about-item:hover span {
-    opacity: 1;
-    border: 2px solid #CC0039;
-    font-size: 42px;
-    -webkit-transform: scale(1.1, 1.1) rotate(360deg);
-    -moz-transform: scale(1.1, 1.1) rotate(360deg);
-    -o-transform: scale(1.1, 1.1) rotate(360deg);
-    transform: scale(1.1, 1.1) rotate(360deg);
+.co-convener .card .subCard{
+    padding: 3.5%;
 }
 
-.about-item:hover h2 {
-    opacity: 1;
-    -webkit-transform: scale(1.1, 1.1);
-    -moz-transform: scale(1.1, 1.1);
-    -o-transform: scale(1.1, 1.1);
-    transform: scale(1.1, 1.1);
+.container .card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.about .lead {
-    color: #CC0039;
-    font-size: 14px;
-    font-weight: bold;
+.container .card .subCard{
+    padding: 3.5%;
 }
 
-@media(max-width: 700px){
-    .row{
+.container .team{
+    border: 2px solid black;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .co-convener .card{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
+    .container .team{
+        border: 2px solid black;
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .container .card{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container .card .subCard{
+        padding: 2%;
+    }
+    
 }
