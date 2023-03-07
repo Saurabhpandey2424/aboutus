@@ -7,6 +7,9 @@
 }
 
 .row {
+    border:2px solid #000000;
+    margin:5px;
+    padding:10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -14,9 +17,12 @@
 .about h1 {
     padding: 10px 0;
     margin-bottom: 20px;
+    
 }
 
-
+.about-item h2 {
+    text-align: center;
+}
 .about img {
     display: block;
     width: 120px;
