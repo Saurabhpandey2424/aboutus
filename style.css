@@ -1,13 +1,21 @@
 .about {
     cursor: pointer;
-    background-color:#638bb9;
+    background-color:#003459;
     color: #FFFFFF;
     padding-top: 20px;
     padding-bottom: 30px;
 }
 
+/* #menu li{
+    display: inline;
+
+}
+#menu {
+     max-width: 30%;
+} */
 .row {
-    border:2px solid #000000;
+    border:2px solid #979ebb;
+    border-radius:5px;
     margin:5px;
     padding:10px;
     display: flex;
